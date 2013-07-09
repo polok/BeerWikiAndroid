@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- General -->
+    <string name="app_name">BeerWiki</string>
+    <string name="dialog_loading_txt">Loading...</string>
+    <string name="menu_about">About</string>
+
+    <!-- Dashboard -->
+    <string name="btn_dashboard_beers">Beers</string>
+    <string name="btn_dashboard_breweries">Breweries</string>
+    <string name="no_breweries_empty_list">No breweries</string>
+    <string name="no_beers_empty_list">No beers</string>
+
+    <!-- About -->
+    <string name="about_header">BeerWiki</string>
+    <string name="about_body">App for recruitment purpose.\n\nAs web service it uses "Open Beer Database" \nhttp://openbeerdatabase.com \n\nThe application uses following libraries:\nActionBar Sherlock\nRoboGuice\n</string>
+    <string name="no_email_clients">There are no email clients installed.</string>
+    <string name="send_mail_intent_picker_header">Send mail...</string>
+    <string name="feedback_email_address">mpolak87@gmail.com</string>
+    <string name="feedback_email_subject">BeerWiki feedback</string>
+    <string name="feedback_email_message_base">This is a feedback email concerning BeerWiki.</string>
+    <string name="feedback_btn">Feedback</string>
+
+</resources>

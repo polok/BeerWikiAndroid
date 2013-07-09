@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ws_host_url">http://api.openbeerdatabase.com</string>
+
+    <!--  Beer -->
+    <string name="ws_beers_get_url">/v1/beers.json</string>
+    <string name="ws_beers_get_by_query_url">/v1/beers.json?query=</string>
+    <string name="ws_beer_get_by_id_url">/v1/beers/ID.json</string>
+    
+    <!-- Brewery -->
+    <string name="ws_breweries_get_url">/v1/breweries.json</string>
+    <string name="ws_breweries_get_by_query_url">/v1/breweries.json?query=</string>
+    <string name="ws_brewery_get_by_id_url">/v1/breweries/ID.json</string>
+
+</resources>

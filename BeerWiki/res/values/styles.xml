@@ -1,0 +1,32 @@
+<resources>
+
+    <style name="BeerWikiNoTitleBarTheme" parent="@style/Theme.Sherlock.Light.NoActionBar" />
+
+    <style name="BeerWikiTheme" parent="@style/Theme.Sherlock.Light">
+        <item name="android:buttonStyle">@style/ButtonBeerWikiStyle</item>
+    </style>
+
+    <style name="ButtonBeerWikiStyle" parent="android:Widget.Button">
+        <item name="android:background">@drawable/btn_default_holo_light</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="ListBeerWikiStyle">
+        <item name="android:layout_margin">@dimen/margin_medium</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">@dimen/margin_medium</item>
+    </style>
+
+    <style name="DashboardButtonBeerWikiStyle">
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textColor">@color/orange_dark</item>
+        <item name="android:padding">@dimen/padding_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/btn_dashboard_selector</item>
+    </style>
+
+</resources>
