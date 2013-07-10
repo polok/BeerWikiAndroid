@@ -1,10 +1,10 @@
 package com.polak.beer.activity;
 
-import com.polak.beer.R;
-
-import roboguice.activity.RoboSplashActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import com.polak.beer.R;
+import com.polak.beer.fragment.activity.DashboardFragmentActivity;
+import roboguice.activity.RoboSplashActivity;
 
 public class SplashScreenActivity extends RoboSplashActivity {
 
@@ -17,7 +17,7 @@ public class SplashScreenActivity extends RoboSplashActivity {
 
 	@Override
 	protected void startNextActivity() {
-		Intent intent = new Intent(this, DashboardActivity.class);
+		Intent intent = new Intent(this, DashboardFragmentActivity.class);
 		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		startActivity(intent);
 	}
