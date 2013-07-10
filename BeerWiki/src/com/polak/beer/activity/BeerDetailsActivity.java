@@ -1,12 +1,11 @@
 package com.polak.beer.activity;
 
-import roboguice.inject.ContentView;
-import roboguice.inject.InjectView;
 import android.os.Bundle;
 import android.widget.TextView;
-
 import com.polak.beer.R;
 import com.polak.beer.activity.robosherlock.RoboSherlockActivity;
+import roboguice.inject.ContentView;
+import roboguice.inject.InjectView;
 
 @ContentView(R.layout.a_beer_details)
 public class BeerDetailsActivity extends RoboSherlockActivity {

@@ -1,8 +1,12 @@
 actionbarsherlock/bin
 actionbarsherlock/gen
 actionbarsherlock/.settings
+actionbarsherlock/.classpath
+actionbarsherlock/.project
 BeerWiki/out
 BeerWiki/bin
 BeerWiki/gen
 BeerWiki/.settings
+BeerWiki/.classpath
+BeerWiki/.project
 

@@ -13,7 +13,7 @@
 
     <!-- About -->
     <string name="about_header">BeerWiki</string>
-    <string name="about_body">App for recruitment purpose.\n\nAs web service it uses "Open Beer Database" \nhttp://openbeerdatabase.com \n\nThe application uses following libraries:\nActionBar Sherlock\nRoboGuice\n</string>
+    <string name="about_body">\n\nAs web service it uses "Open Beer Database" \nhttp://openbeerdatabase.com \n\nThe application uses following libraries:\nActionBar Sherlock\nRoboGuice\n</string>
     <string name="no_email_clients">There are no email clients installed.</string>
     <string name="send_mail_intent_picker_header">Send mail...</string>
     <string name="feedback_email_address">mpolak87@gmail.com</string>
