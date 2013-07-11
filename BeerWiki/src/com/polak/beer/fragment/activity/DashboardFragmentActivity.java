@@ -34,11 +34,11 @@ public class DashboardFragmentActivity extends RoboSherlockFragmentActivity {
     }
 
     public void onBeerClicked(View view) {
-        startActivity(BeerWikiActivityUtil.buildActivityIntent(this, BeerListActivity.class));
+        startActivity(BeerWikiActivityUtil.buildActivityIntent(this, BeerFragmentActivity.class));
     }
 
     public void onBreweryClicked(View view) {
-        startActivity(BeerWikiActivityUtil.buildActivityIntent(this, BreweryListActivity.class));
+        startActivity(BeerWikiActivityUtil.buildActivityIntent(this, BreweryFragmentActivity.class));
     }
 
 }

@@ -10,6 +10,15 @@ public class Beer {
 	private String description;
 	private double abv;
 
+    public Beer(){
+    }
+
+    public Beer(String name, String desc, double abv) {
+        this.name = name;
+        this.description = desc;
+        this.abv = abv;
+    }
+
 	public long getId() {
 		return id;
 	}

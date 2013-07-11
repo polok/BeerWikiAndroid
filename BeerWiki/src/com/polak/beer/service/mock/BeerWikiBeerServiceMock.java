@@ -10,7 +10,9 @@ public class BeerWikiBeerServiceMock implements BeerService {
 
 	@Override
 	public List<Beer> getAllBeers() {
-		return new ArrayList<Beer>();
+        List<Beer> beers = new ArrayList<Beer>();
+        beers.add(new Beer("Name Test", "Name desc", 3));
+		return beers;
 	}
 
 	@Override

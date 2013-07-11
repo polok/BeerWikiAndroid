@@ -19,10 +19,10 @@ public class BeerDetailsActivity extends RoboSherlockActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		tvBeerDesc.setText(getBeearDescFromIntent());
+		tvBeerDesc.setText(getBeerDescFromIntent());
 	}
 
-	private String getBeearDescFromIntent() {
+	private String getBeerDescFromIntent() {
 		Bundle extras = getIntent().getExtras();
 		if (extras == null) {
 			return NO_DESCRIPTION_TXT;
