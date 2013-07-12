@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.Toast;
 import com.github.rtyley.android.sherlock.roboguice.fragment.RoboSherlockListFragment;
 import com.google.inject.Inject;
 import com.polak.beer.R;
@@ -42,7 +43,7 @@ public class BeerListFragment extends RoboSherlockListFragment implements Loader
         public void onBeerSelected(String beerDesc);
     }
 
-    public static BeerListFragment buildBeerDetailsFragment() {
+    public static BeerListFragment buildBeerListFragment() {
         return new BeerListFragment();
     }
 
@@ -95,6 +96,12 @@ public class BeerListFragment extends RoboSherlockListFragment implements Loader
         listView.setAdapter(beerAdapter);
 
         getLoaderManager().initLoader(0, null, this).forceLoad();
+    }
+
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+//        super.onListItemClick(l, v, position, id);    //To change body of overridden methods use File | Settings | File Templates.
+        beerSelectionListener.onBeerSelected(beerAdapter.getItem(position).getDescription());
     }
 
     public static class BeerLoader extends AsyncTaskLoader<List<Beer>> {

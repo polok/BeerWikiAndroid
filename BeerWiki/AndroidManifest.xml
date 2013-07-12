@@ -29,14 +29,7 @@
                 android:name=".fragment.activity.DashboardFragmentActivity"
                 android:configChanges="orientation|keyboardHidden"
                 android:screenOrientation="portrait"/>
-        <activity
-                android:name=".activity.BeerListActivity"
-                android:configChanges="orientation|keyboardHidden"/>
         <activity android:name=".activity.BeerDetailsActivity"/>
-        <activity
-                android:name=".activity.BreweryListActivity"
-                android:configChanges="orientation|keyboardHidden"
-                android:screenOrientation="portrait"/>
         <activity
                 android:name=".fragment.activity.BeerFragmentActivity"
                 android:configChanges="orientation|keyboardHidden"/>

@@ -1,15 +1,16 @@
 package com.polak.beer.fragment.activity;
 
 import android.os.Bundle;
+import android.widget.LinearLayout;
 import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockFragmentActivity;
-import com.github.rtyley.android.sherlock.roboguice.fragment.RoboSherlockFragment;
-import com.github.rtyley.android.sherlock.roboguice.fragment.RoboSherlockListFragment;
 import com.polak.beer.R;
+import com.polak.beer.fragment.BeerDetailsFragment;
 import com.polak.beer.fragment.BeerListFragment;
-import roboguice.activity.RoboFragmentActivity;
-import roboguice.fragment.RoboFragment;
+import com.polak.beer.util.DataUtils;
 import roboguice.inject.ContentView;
 import roboguice.inject.InjectFragment;
+import roboguice.inject.InjectView;
+import roboguice.inject.Nullable;
 
 /**
  * User: marcin
@@ -19,12 +20,20 @@ import roboguice.inject.InjectFragment;
 @ContentView(R.layout.a_fragment_beer)
 public class BeerFragmentActivity extends RoboSherlockFragmentActivity implements BeerListFragment.OnBeerSelectionListener{
 
+//    @Nullable @InjectView(R.id.ll_beer_fragment_container)
+    private LinearLayout fragmentContainer;
+
+//    @InjectFragment(R.id.beer_details)
+//    private BeerDetailsFragment beerDetailsFragment;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if(findViewById(R.id.ll_beer_fragment_container) != null) {
-            BeerListFragment beerListFragment = BeerListFragment.buildBeerDetailsFragment();
+        fragmentContainer = (LinearLayout) findViewById(R.id.ll_beer_fragment_container);
+
+        if(fragmentContainer != null) {
+            BeerListFragment beerListFragment = BeerListFragment.buildBeerListFragment();
 
             getSupportFragmentManager().beginTransaction().add(R.id.ll_beer_fragment_container, beerListFragment).commit();
         }
@@ -32,6 +41,13 @@ public class BeerFragmentActivity extends RoboSherlockFragmentActivity implement
 
     @Override
     public void onBeerSelected(String beerDesc) {
-        //To change body of implemented methods use File | Settings | File Templates.
+
+        if(fragmentContainer != null) {
+            BeerDetailsFragment beerDetailsFragment = BeerDetailsFragment.buildBeerDetailsFragmentWithDesc(beerDesc);
+            getSupportFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.ll_beer_fragment_container, beerDetailsFragment).commit();
+        } else {
+            BeerDetailsFragment beerDetailsFragment = (BeerDetailsFragment) getSupportFragmentManager().findFragmentById(R.id.beer_details);
+            beerDetailsFragment.updateBeerDescription(beerDesc);
+        }
     }
 }

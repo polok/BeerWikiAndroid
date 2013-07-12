@@ -1,14 +1,11 @@
 package com.polak.beer.fragment.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import com.actionbarsherlock.view.Menu;
 import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockFragmentActivity;
 import com.polak.beer.R;
 import com.polak.beer.activity.AboutActivity;
-import com.polak.beer.activity.BeerListActivity;
-import com.polak.beer.activity.BreweryListActivity;
 import com.polak.beer.util.BeerWikiActivityUtil;
 import roboguice.inject.ContentView;
 
