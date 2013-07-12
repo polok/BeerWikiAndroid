@@ -6,11 +6,7 @@ import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockFragmen
 import com.polak.beer.R;
 import com.polak.beer.fragment.BeerDetailsFragment;
 import com.polak.beer.fragment.BeerListFragment;
-import com.polak.beer.util.DataUtils;
 import roboguice.inject.ContentView;
-import roboguice.inject.InjectFragment;
-import roboguice.inject.InjectView;
-import roboguice.inject.Nullable;
 
 /**
  * User: marcin
