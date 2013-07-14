@@ -10,7 +10,7 @@ import android.net.Uri;
  * Date: 14.07.13
  * Time: 15:33
  */
-public class BeerWikiProvider implements ContentProvider{
+public class BeerWikiProvider extends ContentProvider {
     @Override
     public boolean onCreate() {
         return false;  //To change body of implemented methods use File | Settings | File Templates.

@@ -31,9 +31,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/polak/beer/provider/BeerWikiProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/polak/beer/provider/BeerWikiContract.java" afterPath="$PROJECT_DIR$/src/com/polak/beer/provider/BeerWikiContract.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values-large/dimens.xml" afterPath="$PROJECT_DIR$/res/values-large/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/polak/beer/provider/BeerWikiProvider.java" afterPath="$PROJECT_DIR$/src/com/polak/beer/provider/BeerWikiProvider.java" />
     </list>
     <ignored path="BeerWiki.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,7 +60,7 @@
     <file path="/BeerAdapter.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373806705114" ignored="false" />
     <file path="/OnAdapterDataChanged.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373806664812" ignored="false" />
     <file path="/BeerWikiContract.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373808560558" ignored="false" />
-    <file path="/BeerWikiProvider.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373808796001" ignored="false" />
+    <file path="/BeerWikiProvider.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373808876938" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,15 +160,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BreweryListFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryListFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="42" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BreweryAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/polak/beer/adapter/BreweryAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -221,10 +210,19 @@
       <file leaf-file-name="BeerWikiProvider.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/polak/beer/provider/BeerWikiProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="8" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.9122807">
+            <state line="12" column="37" selection-start="263" selection-end="263" vertical-scroll-proportion="0.5263158">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContentProvider.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/app/android-sdk-linux/platforms/android-17/android.jar!/android/content/ContentProvider.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="22" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -387,6 +385,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="net" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeerWiki" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Android 4.2.2 Platform &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -965,16 +989,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/l_item_beer.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="49" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/l_item_brewery.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1082,9 +1096,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/app/android-sdk-linux/platforms/android-17/android.jar!/android/content/ContentProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/polak/beer/provider/BeerWikiProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="8" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.9122807">
+        <state line="12" column="37" selection-start="263" selection-end="263" vertical-scroll-proportion="0.5263158">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
