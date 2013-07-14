@@ -31,15 +31,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/polak/beer/fragment/BeerDetailsFragment.java" afterPath="$PROJECT_DIR$/src/com/polak/beer/fragment/BeerDetailsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/polak/beer/fragment/activity/BeerFragmentActivity.java" afterPath="$PROJECT_DIR$/src/com/polak/beer/fragment/activity/BeerFragmentActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/polak/beer/fragment/BeerListFragment.java" afterPath="$PROJECT_DIR$/src/com/polak/beer/fragment/BeerListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/polak/beer/adapter/BreweryAdapter.java" afterPath="$PROJECT_DIR$/src/com/polak/beer/adapter/BreweryAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryDetailsFragment.java" afterPath="$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryDetailsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/polak/beer/fragment/activity/BreweryFragmentActivity.java" afterPath="$PROJECT_DIR$/src/com/polak/beer/fragment/activity/BreweryFragmentActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryListFragment.java" afterPath="$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-large/a_fragment_brewery.xml" afterPath="$PROJECT_DIR$/res/layout-large/a_fragment_brewery.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/f_brewery_details.xml" afterPath="$PROJECT_DIR$/res/layout/f_brewery_details.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/l_item_beer.xml" afterPath="$PROJECT_DIR$/res/layout/l_item_beer.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/l_item_brewery.xml" afterPath="$PROJECT_DIR$/res/layout/l_item_brewery.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -65,6 +59,8 @@
     <file path="/DataUtils.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373627398293" ignored="false" />
     <file path="/BreweryAdapter.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373629408065" ignored="false" />
     <file path="/a.dummy" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373789559367" ignored="false" />
+    <file path="/l_item_beer.xml" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373793338608" ignored="false" />
+    <file path="/l_item_brewery.xml" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373793351262" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,19 +168,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BreweryFragmentActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/polak/beer/fragment/activity/BreweryFragmentActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="5" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BreweryDetailsFragment.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BreweryDetailsFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryDetailsFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="8" selection-start="1627" selection-end="1627" vertical-scroll-proportion="1.0445683">
+            <state line="42" column="97" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,7 +182,31 @@
       <file leaf-file-name="BeerListFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/polak/beer/fragment/BeerListFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="12" selection-start="2965" selection-end="2965" vertical-scroll-proportion="0.0">
+            <state line="63" column="0" selection-start="1844" selection-end="1844" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="l_item_beer.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/l_item_beer.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="49" selection-start="570" selection-end="570" vertical-scroll-proportion="-1.8">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="l_item_brewery.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/l_item_brewery.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="4" selection-start="582" selection-end="582" vertical-scroll-proportion="0.42916667">
               <folding />
             </state>
           </provider>
@@ -219,59 +230,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="a_fragment_brewery.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/a_fragment_brewery.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="26" selection-start="139" selection-end="139" vertical-scroll-proportion="-1.8">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="a_fragment_brewery.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout-large/a_fragment_brewery.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="38" selection-start="630" selection-end="630" vertical-scroll-proportion="-8.4">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="f_brewery_details.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/f_brewery_details.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="39" selection-start="312" selection-end="312" vertical-scroll-proportion="-4.2">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BreweryListFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryListFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="5" selection-start="3219" selection-end="3219" vertical-scroll-proportion="0.0">
+            <state line="56" column="18" selection-start="1858" selection-end="1858" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="l_item_brewery.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/l_item_brewery.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="ListFragment.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../actionbarsherlock/libs/android-support-v4.jar!/android/support/v4/app/ListFragment.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="38" selection-start="856" selection-end="856" vertical-scroll-proportion="-12.6">
+            <state line="53" column="0" selection-start="2223" selection-end="2223" vertical-scroll-proportion="-8.68">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoaderManager.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../actionbarsherlock/libs/android-support-v4.jar!/android/support/v4/app/LoaderManager.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="13" selection-start="1278" selection-end="1278" vertical-scroll-proportion="-7.48">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BreweryAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/polak/beer/adapter/BreweryAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="16" selection-start="1595" selection-end="1595" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#440#449#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -294,22 +286,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/polak/beer/application/BeerWikiRoboModule.java" />
         <option value="$PROJECT_DIR$/res/layout/a_fragment_beer.xml" />
         <option value="$PROJECT_DIR$/res/layout/a_fragment_brewery.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/polak/beer/fragment/activity/DashboardFragmentActivity.java" />
         <option value="$PROJECT_DIR$/src/com/polak/beer/util/DataUtils.java" />
         <option value="$PROJECT_DIR$/src/com/polak/beer/adapter/BreweryAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryListFragment.java" />
-        <option value="$PROJECT_DIR$/src/com/polak/beer/fragment/BeerListFragment.java" />
         <option value="$PROJECT_DIR$/res/layout-large/a_fragment_brewery.xml" />
         <option value="$PROJECT_DIR$/src/com/polak/beer/fragment/activity/BreweryFragmentActivity.java" />
         <option value="$PROJECT_DIR$/src/com/polak/beer/fragment/BeerDetailsFragment.java" />
         <option value="$PROJECT_DIR$/res/layout/f_brewery_details.xml" />
         <option value="$PROJECT_DIR$/src/com/polak/beer/fragment/activity/BeerFragmentActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/l_item_brewery.xml" />
         <option value="$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryDetailsFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryListFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/polak/beer/fragment/BeerListFragment.java" />
+        <option value="$PROJECT_DIR$/res/layout/l_item_beer.xml" />
+        <option value="$PROJECT_DIR$/res/layout/l_item_brewery.xml" />
       </list>
     </option>
   </component>
@@ -719,6 +711,76 @@
               <option name="myItemId" value="BeerWiki" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actionbarsherlock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeerWiki" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actionbarsherlock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android-support-v4.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeerWiki" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actionbarsherlock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android-support-v4.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeerWiki" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actionbarsherlock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android-support-v4.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -935,7 +997,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828686" sideWeight="0.6192" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32828686" sideWeight="0.6208" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -943,13 +1005,13 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37958533" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3792" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2932271" sideWeight="0.6832" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3168" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2932271" sideWeight="0.6208" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3168" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="164" y="96" width="1103" height="573" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.6704" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1025,38 +1087,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/service/BeerWikiBeerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/service/BeerWikiBreweryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="60" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/adapter/BeerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="58" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#428#434#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/adapter/BreweryAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="47" selection-start="633" selection-end="633" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#440#449#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/app/android-sdk-linux/platforms/android-17/android.jar!/java/lang/String.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
@@ -1074,23 +1104,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/polak/beer/fragment/activity/BreweryFragmentActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="5" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/l_item_brewery.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="38" selection-start="856" selection-end="856" vertical-scroll-proportion="-12.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="5" selection-start="3219" selection-end="3219" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1139,19 +1152,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/fragment/BeerListFragment.java">
+    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryDetailsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="12" selection-start="2965" selection-end="2965" vertical-scroll-proportion="0.0">
+        <state line="42" column="97" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/adapter/BreweryAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="16" selection-start="1595" selection-end="1595" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#440#449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../actionbarsherlock/libs/android-support-v4.jar!/android/support/v4/app/LoaderManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="13" selection-start="1278" selection-end="1278" vertical-scroll-proportion="-7.48">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryDetailsFragment.java">
+    <entry file="jar://$PROJECT_DIR$/../actionbarsherlock/libs/android-support-v4.jar!/android/support/v4/app/ListFragment.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="8" selection-start="1627" selection-end="1627" vertical-scroll-proportion="1.0445683">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="53" column="0" selection-start="2223" selection-end="2223" vertical-scroll-proportion="-8.68">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="18" selection-start="1858" selection-end="1858" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/fragment/BeerListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="0" selection-start="1844" selection-end="1844" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/l_item_beer.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="49" selection-start="570" selection-end="570" vertical-scroll-proportion="-1.8">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/l_item_brewery.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="4" selection-start="582" selection-end="582" vertical-scroll-proportion="0.42916667">
+          <folding />
         </state>
       </provider>
     </entry>

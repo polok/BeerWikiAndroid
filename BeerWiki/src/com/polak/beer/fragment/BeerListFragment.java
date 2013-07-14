@@ -61,12 +61,6 @@ public class BeerListFragment extends RoboSherlockListFragment implements Loader
     @Override
     public void onLoaderReset(Loader<List<Beer>> listLoader) {
         beerAdapter.updateDataEntries(null);
-
-        if(isResumed()) {
-            setListShown(true);
-        } else {
-            setListShownNoAnimation(true);
-        }
     }
 
     @Override

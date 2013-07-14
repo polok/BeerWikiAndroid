@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:textColor="@color/grey_light"
-        android:textSize="@dimen/font_size_large" />
+        android:textSize="@dimen/font_size_medium" />
 
     <TextView
         android:id="@+id/tv_brewery_url"
@@ -20,6 +20,6 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@id/tv_brewery_name"
         android:textColor="@color/orange_light"
-        android:textSize="@dimen/font_size_medium" />
+        android:textSize="@dimen/font_size_small" />
 
 </RelativeLayout>
