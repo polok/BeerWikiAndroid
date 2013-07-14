@@ -17,8 +17,8 @@ import roboguice.inject.InjectView;
  */
 public class BeerDetailsFragment extends RoboSherlockFragment {
 
-    public static final String BEER_DESC_KEY = "beear_desc";
     private static final String NO_DESCRIPTION_TXT = "No description";
+    private static final String BEER_DESC_KEY = "beear_desc";
 
     @InjectView(R.id.tv_beer_desc)
     private TextView tvBeerDesc;
@@ -44,11 +44,11 @@ public class BeerDetailsFragment extends RoboSherlockFragment {
         if(beerDesc != null) {
             tvBeerDesc.setText(beerDesc);
         } else {
-            tvBeerDesc.setText(getBeerDescFromIntent());
+            tvBeerDesc.setText(extractBeerDescFromArguments());
         }
     }
 
-    private String getBeerDescFromIntent() {
+    private String extractBeerDescFromArguments() {
         Bundle extras = getArguments();
         if (extras == null) {
             return NO_DESCRIPTION_TXT;

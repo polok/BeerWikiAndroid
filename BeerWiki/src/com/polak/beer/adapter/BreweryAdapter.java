@@ -1,17 +1,16 @@
 package com.polak.beer.adapter;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-
 import com.polak.beer.R;
 import com.polak.beer.entity.Brewery;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class BreweryAdapter extends BaseAdapter {
 
@@ -28,7 +27,7 @@ public class BreweryAdapter extends BaseAdapter {
 	}
 
 	@Override
-	public Object getItem(int position) {
+	public Brewery getItem(int position) {
 		return breweries.get(position);
 	}
 

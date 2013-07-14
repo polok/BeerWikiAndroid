@@ -37,7 +37,6 @@ public class BeerFragmentActivity extends RoboSherlockFragmentActivity implement
 
     @Override
     public void onBeerSelected(String beerDesc) {
-
         if(fragmentContainer != null) {
             BeerDetailsFragment beerDetailsFragment = BeerDetailsFragment.buildBeerDetailsFragmentWithDesc(beerDesc);
             getSupportFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.ll_beer_fragment_container, beerDetailsFragment).commit();

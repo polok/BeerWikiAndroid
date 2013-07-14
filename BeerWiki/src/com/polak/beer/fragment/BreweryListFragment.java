@@ -96,6 +96,11 @@ public class BreweryListFragment extends RoboSherlockListFragment implements Loa
         getLoaderManager().initLoader(0, null, this).forceLoad();
     }
 
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        brewerySelectionListener.onBrewerySelected(breweryAdapter.getItem(position).getUrl());
+    }
+
     public static class BreweryLoader extends AsyncTaskLoader<List<Brewery>> {
 
         @Inject
