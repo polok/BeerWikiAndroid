@@ -64,6 +64,11 @@ public class BreweryAdapter extends BaseAdapter {
 		notifyDataSetChanged();
 	}
 
+    public void clearDataEntries() {
+        this.breweries.clear();
+        notifyDataSetChanged();
+    }
+
 	static class BreweryViewHolder {
 		TextView tvName;
 		TextView tvUrl;

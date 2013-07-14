@@ -60,7 +60,7 @@ public class BeerListFragment extends RoboSherlockListFragment implements Loader
 
     @Override
     public void onLoaderReset(Loader<List<Beer>> listLoader) {
-        beerAdapter.updateDataEntries(null);
+        beerAdapter.clearDataEntries();
     }
 
     @Override

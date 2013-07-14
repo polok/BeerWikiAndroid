@@ -66,6 +66,11 @@ public class BeerAdapter extends BaseAdapter {
 		notifyDataSetChanged();
 	}
 
+    public void clearDataEntries() {
+        this.beers.clear();
+        notifyDataSetChanged();
+    }
+
 	static class BeerViewHolder {
 		TextView tvName;
 		TextView tvAvg;

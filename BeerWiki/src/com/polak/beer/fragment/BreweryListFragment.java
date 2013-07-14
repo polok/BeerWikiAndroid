@@ -58,7 +58,7 @@ public class BreweryListFragment extends RoboSherlockListFragment implements Loa
 
     @Override
     public void onLoaderReset(Loader<List<Brewery>> listLoader) {
-        breweryAdapter.updateDataEntries(null);
+        breweryAdapter.clearDataEntries();
     }
 
     @Override
