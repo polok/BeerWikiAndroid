@@ -12,7 +12,7 @@ import com.polak.beer.entity.Brewery;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BreweryAdapter extends BaseAdapter {
+public class BreweryAdapter extends BaseAdapter implements OnAdapterDataChanged<Brewery> {
 
 	private List<Brewery> breweries = new ArrayList<Brewery>();
 	private LayoutInflater inflater;
@@ -59,11 +59,13 @@ public class BreweryAdapter extends BaseAdapter {
 		return convertView;
 	}
 
+    @Override
 	public void updateDataEntries(List<Brewery> breweries) {
 		this.breweries = breweries;
 		notifyDataSetChanged();
 	}
 
+    @Override
     public void clearDataEntries() {
         this.breweries.clear();
         notifyDataSetChanged();

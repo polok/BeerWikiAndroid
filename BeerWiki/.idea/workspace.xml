@@ -31,11 +31,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/polak/beer/adapter/OnAdapterDataChanged.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/polak/beer/adapter/BeerAdapter.java" afterPath="$PROJECT_DIR$/src/com/polak/beer/adapter/BeerAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/polak/beer/fragment/BeerListFragment.java" afterPath="$PROJECT_DIR$/src/com/polak/beer/fragment/BeerListFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/polak/beer/adapter/BreweryAdapter.java" afterPath="$PROJECT_DIR$/src/com/polak/beer/adapter/BreweryAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryListFragment.java" afterPath="$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BeerWiki.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,11 +55,12 @@
     <file path="/f_brewery_details.xml" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373790058137" ignored="false" />
     <file path="/a_fragment_brewery.xml" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373789525456" ignored="false" />
     <file path="/DataUtils.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373627398293" ignored="false" />
-    <file path="/BreweryAdapter.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373806308588" ignored="false" />
+    <file path="/BreweryAdapter.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373806739228" ignored="false" />
     <file path="/a.dummy" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373789559367" ignored="false" />
     <file path="/l_item_beer.xml" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373793338608" ignored="false" />
     <file path="/l_item_brewery.xml" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373793351262" ignored="false" />
-    <file path="/BeerAdapter.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373806190376" ignored="false" />
+    <file path="/BeerAdapter.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373806705114" ignored="false" />
+    <file path="/OnAdapterDataChanged.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373806664812" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,36 +113,6 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/com/polak/beer/adapter/BeerAdapter.java" line="43" class="com.polak.beer.adapter.BeerAdapter" package="com.polak.beer.adapter">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/polak/beer/adapter/BeerAdapter.java" line="64" class="com.polak.beer.adapter.BeerAdapter" package="com.polak.beer.adapter">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/com/polak/beer/fragment/activity/BreweryFragmentActivity.java" line="35" class="com.polak.beer.fragment.activity.BreweryFragmentActivity" package="com.polak.beer.fragment.activity">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -181,27 +150,38 @@
       <file leaf-file-name="BeerAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/polak/beer/adapter/BeerAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="16" selection-start="1657" selection-end="1657" vertical-scroll-proportion="0.0">
+            <state line="70" column="63" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#428#434#0" expanded="true" />
+                <element signature="e#466#472#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BreweryListFragment.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="OnAdapterDataChanged.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/polak/beer/adapter/OnAdapterDataChanged.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="39" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BreweryListFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryListFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="42" selection-start="1982" selection-end="1982" vertical-scroll-proportion="0.47142857">
+            <state line="62" column="42" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BreweryAdapter.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BreweryAdapter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/polak/beer/adapter/BreweryAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="31" selection-start="1800" selection-end="1800" vertical-scroll-proportion="0.0">
+            <state line="67" column="13" selection-start="1768" selection-end="1768" vertical-scroll-proportion="0.65789473">
               <folding />
             </state>
           </provider>
@@ -225,7 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/a_fragment_brewery.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/polak/beer/fragment/activity/DashboardFragmentActivity.java" />
         <option value="$PROJECT_DIR$/src/com/polak/beer/util/DataUtils.java" />
@@ -237,10 +216,11 @@
         <option value="$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryDetailsFragment.java" />
         <option value="$PROJECT_DIR$/res/layout/l_item_beer.xml" />
         <option value="$PROJECT_DIR$/res/layout/l_item_brewery.xml" />
-        <option value="$PROJECT_DIR$/src/com/polak/beer/adapter/BeerAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/polak/beer/fragment/BeerListFragment.java" />
-        <option value="$PROJECT_DIR$/src/com/polak/beer/adapter/BreweryAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryListFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/polak/beer/adapter/OnAdapterDataChanged.java" />
+        <option value="$PROJECT_DIR$/src/com/polak/beer/adapter/BeerAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/polak/beer/adapter/BreweryAdapter.java" />
       </list>
     </option>
   </component>
@@ -1022,16 +1002,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout-large/a_fragment_brewery.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="38" selection-start="630" selection-end="630" vertical-scroll-proportion="-8.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/a_fragment_brewery.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1118,15 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/adapter/BeerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="16" selection-start="1657" selection-end="1657" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#428#434#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/polak/beer/fragment/BeerListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="90" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.0">
@@ -1134,16 +1095,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/adapter/BreweryAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="31" selection-start="1800" selection-end="1800" vertical-scroll-proportion="0.0">
+        <state line="62" column="42" selection-start="1989" selection-end="1989" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/fragment/BreweryListFragment.java">
+    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/adapter/OnAdapterDataChanged.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="42" selection-start="1982" selection-end="1982" vertical-scroll-proportion="0.47142857">
+        <state line="14" column="39" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/adapter/BeerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="63" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#466#472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/polak/beer/adapter/BreweryAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="13" selection-start="1768" selection-end="1768" vertical-scroll-proportion="0.65789473">
           <folding />
         </state>
       </provider>

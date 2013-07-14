@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.polak.beer.R;
 import com.polak.beer.entity.Beer;
 
-public class BeerAdapter extends BaseAdapter {
+public class BeerAdapter extends BaseAdapter implements OnAdapterDataChanged<Beer> {
 
 	private List<Beer> beers = new ArrayList<Beer>();
 	private LayoutInflater inflater;
@@ -61,11 +61,13 @@ public class BeerAdapter extends BaseAdapter {
 		return convertView;
 	}
 
+    @Override
 	public void updateDataEntries(List<Beer> beers) {
 		this.beers = beers;
 		notifyDataSetChanged();
 	}
 
+    @Override
     public void clearDataEntries() {
         this.beers.clear();
         notifyDataSetChanged();
