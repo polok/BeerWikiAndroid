@@ -104,16 +104,17 @@ public class BeerWikiProvider extends ContentProvider {
     @Override
     public Uri insert(Uri uri, ContentValues contentValues) {
         int match = uriMatcher.match(uri);
+        SQLiteDatabase sqLiteDatabase = database.getWritableDatabase();
         long id = 0;
         Uri uriTmp = null;
 
         switch (match) {
             case BEERS_CODE:
-                id = database.getWritableDatabase().insert(BeerWikiDatabase.Tables.BEERS, null, contentValues);
+                id = sqLiteDatabase.insert(BeerWikiDatabase.Tables.BEERS, null, contentValues);
                 uriTmp = Uri.parse(BeerWikiContract.Beers.CONTENT_URI + "/" + id);
                 break;
             case BREWERIES_CODE:
-                id = database.getWritableDatabase().insert(BeerWikiDatabase.Tables.BREWERY, null, contentValues);
+                id = sqLiteDatabase.insert(BeerWikiDatabase.Tables.BREWERY, null, contentValues);
                 uriTmp = Uri.parse(BeerWikiContract.Breweries.CONTENT_URI + "/" + id);
                 break;
             default:
@@ -124,9 +125,31 @@ public class BeerWikiProvider extends ContentProvider {
     }
 
     @Override
-    public int delete(Uri uri, String s, String[] strings) {
-        getContext().getContentResolver().notifyChange(uri, null); //TODO
-        return 0;  //To change body of implemented methods use File | Settings | File Templates.
+    public int delete(Uri uri, String selection, String[] selectionArgs) {
+        SQLiteDatabase sqLiteDatabase = database.getWritableDatabase();
+        int match = uriMatcher.match(uri);
+        int rowsDeleted = 0;
+
+        switch (match) {
+            case BEERS_CODE:
+                rowsDeleted = sqLiteDatabase.delete(BeerWikiDatabase.Tables.BEERS, selection, selectionArgs);
+                break;
+            case BEERS_ID_CODE:
+                String beerId = uri.getLastPathSegment();
+                rowsDeleted = sqLiteDatabase.delete(BeerWikiDatabase.Tables.BEERS, BeerWikiContract.Beers.BEER_ID + "=" + beerId, null);
+                break;
+            case BREWERIES_CODE:
+                rowsDeleted = sqLiteDatabase.delete(BeerWikiDatabase.Tables.BREWERY, selection, selectionArgs);
+                break;
+            case BREWERIES_ID_CODE:
+                String brerweryId = uri.getLastPathSegment();
+                rowsDeleted = sqLiteDatabase.delete(BeerWikiDatabase.Tables.BREWERY, BeerWikiContract.Breweries.BREWERY_ID + "=" + brerweryId, null);
+                break;
+            default:
+                throw new IllegalArgumentException("Unknown URI: " + uri);
+        }
+        getContext().getContentResolver().notifyChange(uri, null);
+        return rowsDeleted;
     }
 
     @Override
