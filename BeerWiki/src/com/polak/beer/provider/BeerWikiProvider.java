@@ -7,6 +7,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
+import android.util.Log;
 
 /**
  * User: marcin
@@ -15,14 +16,14 @@ import android.net.Uri;
  */
 public class BeerWikiProvider extends ContentProvider {
 
+    private static final String TAG = "BeerWikiProvider";
+
     private static final int BEERS_CODE = 100;
     private static final int BEERS_ID_CODE = 101;
-
     private static final int BREWERIES_CODE = 200;
     private static final int BREWERIES_ID_CODE = 201;
 
     private static UriMatcher uriMatcher = buildUriMatcher();
-
     private BeerWikiDatabase database;
 
     private static UriMatcher buildUriMatcher() {
@@ -61,7 +62,7 @@ public class BeerWikiProvider extends ContentProvider {
         SQLiteQueryBuilder builder = new SQLiteQueryBuilder();
         int match = uriMatcher.match(uri);
 
-        switch(match) {
+        switch (match) {
             case BREWERIES_CODE:
                 builder.setTables(BeerWikiDatabase.Tables.BREWERY);
                 break;
@@ -121,6 +122,7 @@ public class BeerWikiProvider extends ContentProvider {
                 throw new IllegalArgumentException("Unknown URI: " + uri);
         }
         getContext().getContentResolver().notifyChange(uri, null);
+        Log.d(TAG, "Added item with id " + id);
         return uriTmp;
     }
 
@@ -149,12 +151,38 @@ public class BeerWikiProvider extends ContentProvider {
                 throw new IllegalArgumentException("Unknown URI: " + uri);
         }
         getContext().getContentResolver().notifyChange(uri, null);
+        Log.d(TAG, "Deleted rows count: " + rowsDeleted);
         return rowsDeleted;
     }
 
     @Override
-    public int update(Uri uri, ContentValues contentValues, String s, String[] strings) {
-        getContext().getContentResolver().notifyChange(uri, null);       //TODO
-        return 0;  //To change body of implemented methods use File | Settings | File Templates.
+    public int update(Uri uri, ContentValues contentValues, String selection, String[] selectionArgs) {
+        int match = uriMatcher.match(uri);
+        SQLiteDatabase sqLiteDatabase = database.getWritableDatabase();
+        int updateCount = 0;
+
+        switch (match) {
+            case BEERS_CODE:
+                updateCount = sqLiteDatabase.update(BeerWikiDatabase.Tables.BEERS, contentValues, selection, selectionArgs);
+                break;
+            case BEERS_ID_CODE:
+                String beerId = uri.getLastPathSegment();
+                updateCount = sqLiteDatabase.update(BeerWikiDatabase.Tables.BEERS, contentValues, BeerWikiContract.Beers.BEER_ID + "" + beerId, null);
+                break;
+            case BREWERIES_CODE:
+                updateCount = sqLiteDatabase.update(BeerWikiDatabase.Tables.BREWERY, contentValues, selection, selectionArgs);
+                break;
+            case BREWERIES_ID_CODE:
+                String breweryId = uri.getLastPathSegment();
+                updateCount = sqLiteDatabase.update(BeerWikiDatabase.Tables.BREWERY, contentValues, BeerWikiContract.Breweries.BREWERY_ID + "" + breweryId, null);
+                break;
+            default:
+                throw new IllegalArgumentException("Unknown URI: " + uri);
+        }
+
+        getContext().getContentResolver().notifyChange(uri, null);
+        Log.d(TAG, "Updated rows count: " + updateCount);
+
+        return updateCount;
     }
 }

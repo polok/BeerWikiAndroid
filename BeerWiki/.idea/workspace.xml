@@ -60,7 +60,7 @@
     <file path="/BeerAdapter.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373806705114" ignored="false" />
     <file path="/OnAdapterDataChanged.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373806664812" ignored="false" />
     <file path="/BeerWikiContract.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373808560558" ignored="false" />
-    <file path="/BeerWikiProvider.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373911872053" ignored="false" />
+    <file path="/BeerWikiProvider.java" changelist="c6acb84d-0936-433f-83c0-8d96d4ffcd8d" time="1373915897033" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +188,7 @@
       <file leaf-file-name="BeerWikiProvider.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/polak/beer/provider/BeerWikiProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="150" column="66" selection-start="5858" selection-end="5858" vertical-scroll-proportion="0.78070176">
+            <state line="183" column="57" selection-start="7509" selection-end="7509" vertical-scroll-proportion="1.877193">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1224,7 +1224,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/polak/beer/provider/BeerWikiProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="66" selection-start="5858" selection-end="5858" vertical-scroll-proportion="0.78070176">
+        <state line="183" column="57" selection-start="7509" selection-end="7509" vertical-scroll-proportion="1.877193">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
